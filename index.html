@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plant Disease Detection</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌿 Plant Disease Detection</h1>
+<p>Upload plant leaf image to detect disease using AI</p>
+
+<div class="upload-box" id="drop-area">
+
+<input type="file" id="file-input" accept="image/*" hidden>
+
+<div class="upload-content">
+
+<h3>Drag & Drop Image</h3>
+<p>or</p>
+
+<button id="upload-btn">Choose Image</button>
+
+</div>
+
+</div>
+
+<div class="preview">
+<img id="preview-img" src="" alt="Preview">
+</div>
+
+<button id="detect-btn">Detect Disease</button>
+
+<div class="result" id="result">
+
+<h2>Result</h2>
+<p id="disease-name"></p>
+<p id="confidence"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
